@@ -1,0 +1,20 @@
+<html  ng-app="cal-mod">
+<h1>Calculator App</h1><br>
+<head>
+     <script src="D:\Documents\Angular_JS\angular.js"></script>
+     <script src="app.js"></script>
+     <div ng-controller="cal-cntrl as cc">
+   <input type="text" ng-model="cc.a"></input>
+   <div><span ng-bind="cc.opt"> </span></div>
+   <input type="text" ng-model="cc.b"></input>
+   <button ng-click="cc.showResult()">=</button>
+   {{cc.c}}
+   <br>
+   Choose Operation: 
+   <input type="radio" ng-model="cc.opt" value="+">+</input>
+   <input type="radio" ng-model="cc.opt" value="-">-</input>
+   <input type="radio" ng-model="cc.opt" value="*">*</input>
+   <input type="radio" ng-model="cc.opt" value="/">/</input>
+   </div>
+   </head>
+</html>
