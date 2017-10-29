@@ -1,0 +1,18 @@
+<html ng-app="ng-modelex">
+    <head>
+     <script src="D:\Documents\Angular_JS\angular.js"></script>
+     <script src="app.js"></script>
+     <div ng-controller="ngmodel-cntrl">
+   Enter your name here : <input type="text" ng-model="name"></input>
+   Checkbox : <input type="checkbox" ng-model="cbox"></input>
+   Radio : <input type="radio" ng-model="rad" value="1">1</input>
+            <input type="radio" ng-model="rad" value="2">2</input>
+            <input type="radio" ng-model="rad" value="3">3</input>
+   Date : <input type="date" ng-model="dat" ng-change="dateChanged()">1</input>
+Name : {{name}}
+Checkbox: {{cbox}}
+Radio: {{rad}}
+Date: {{dat}}
+</div>
+ </head>      
+</html>
