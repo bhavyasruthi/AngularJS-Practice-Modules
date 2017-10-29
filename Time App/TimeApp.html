@@ -1,0 +1,17 @@
+<html ng-app="clock-mod">
+    <h1>hii</h1>
+    <head>
+    <script src="angular.js"></script>
+       <script src="app.js"></script>
+<h1> Clock APP </h1>
+<div ng-controller="clock-cntrl">
+    
+The current time is : {{cTime}}
+Enter your name here : <input type="text" ng-model="name"></input>
+<button ng-click="hi()">hi</button>
+<button ng-click="updateTime()">Refresh Time</button>
+ 
+Name : {{name}}
+</div>
+ </head>      
+</html>
