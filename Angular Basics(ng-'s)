@@ -1,0 +1,47 @@
+<html ng-app= "sru-mod">
+    <head ng-init = "time = 16; s=3; d=9*100/10" >
+        <script src="angular.js">
+            
+            </script>
+    </head>
+    <body>
+    <div ng-controller="timeCntrl">
+    <h1>hello angular::: i m sruuu {{ftime}}</h1>
+    <p ng-if="true"> Good Morning</p>
+    <p ng-if="false"> Good Morning</p>
+    <button ng-click="hi()">hi</button>
+    </div>
+    <script>
+     var mmodule = angular.module("sru-mod",[]);
+    
+    mmodule.controller("timeCntrl",displayDay);
+mmodule.controller("timeCntrl",displayTime);
+    function displayTime($scope)
+    {
+        $scope.hi = function()
+        {
+            alert("hiiii");
+            ftime="hi mine";
+        }
+        $scope.ftime = "12" + ""+new Date().getDate();;
+        console.log("time is"+ new Date().getTime());
+     alert("in time");
+    }
+    function displayDay()
+    {
+        console.log("day is"+ new Date().getDay());
+    }
+
+    </script>
+    <p ng-if="s == 3">  s Good Morning</p>
+    <p ng-if="time < 12"> Good Morning</p>
+    
+    <p ng-if="d < 99">  9 Good Afternoon</p>
+    
+</html>
+<html>
+    <p ng-if="time > 12">  non ang Good Afternoon</p>
+    <p ng-bind = "sru">cc</p>
+    {{d}}
+</html>
+
