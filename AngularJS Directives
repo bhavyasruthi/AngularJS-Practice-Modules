@@ -1,4 +1,4 @@
-<html ng-app= "sru-mod">
+<html ng-app= "angular-module">
     <head ng-init = "time = 16; s=3; d=9*100/10" >
         <script src="angular.js">
             
@@ -6,13 +6,13 @@
     </head>
     <body>
     <div ng-controller="timeCntrl">
-    <h1>hello angular::: i m sruuu {{ftime}}</h1>
+    <h1>hello angular. Now the time is {{ftime}} !!</h1>
     <p ng-if="true"> Good Morning</p>
     <p ng-if="false"> Good Morning</p>
     <button ng-click="hi()">hi</button>
     </div>
     <script>
-     var mmodule = angular.module("sru-mod",[]);
+     var mmodule = angular.module("angular-module",[]);
     
     mmodule.controller("timeCntrl",displayDay);
 mmodule.controller("timeCntrl",displayTime);
