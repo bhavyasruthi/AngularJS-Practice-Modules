@@ -17,5 +17,5 @@ mmodule.controller("clock-cntrl",displayTime);
             alert("updated");
             $scope.cTime= new Date().toTimeString();
         }
-        //console.log("kjnikj"+updateTime());
+        
     }
