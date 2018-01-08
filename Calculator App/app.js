@@ -8,7 +8,6 @@ mod.controller("cal-cntrl",calcntrl);
             console.log(" changed");
             this.showResult = function()
         {
-           // var anum =  parseFloat(this.a);
            var anum = this.a;
             var bnum =  parseFloat(this.b);
             if(this.opt === '+')
